@@ -13,13 +13,13 @@ jobs:
           POSTGRES_USER: user
           POSTGRES_DB: build
           POSTGRES_PASSWORD: password
-      working_directory: ~/repo
-      environment:
-        JVM_OPTS: -Xmx3200m
-        TERM: dumb
-        DATABASE_PORT: 5432
-        DATABASE_USER: user
-        DATABASE_PASSWORD: password
+    working_directory: ~/repo
+    environment:
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb
+      DATABASE_PORT: 5432
+      DATABASE_USER: user
+      DATABASE_PASSWORD: password
     steps:
       - checkout
 
